@@ -1,0 +1,13 @@
+﻿@model IEnumerable<BertoniSolutionsWebApp.Models.Album>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Album list</h1>
+@using (@Html.BeginForm("Index", "Photo", FormMethod.Post))
+{
+    <input id="submit" type="submit" value="View Album" />
+    @Html.DropDownList("albumId", @Model.Select(album => new SelectListItem(album.Title, album.Id.ToString())));
+
+}
