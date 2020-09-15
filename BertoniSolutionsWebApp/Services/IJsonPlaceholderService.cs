@@ -6,10 +6,10 @@ namespace BertoniSolutionsWebApp.Services
 {
     public interface IJsonPlaceholderService
     {
-        Task<IList<Album>> GetAlbumsAsync();
+        Task<IEnumerable<Album>> GetAlbumsAsync();
 
-        Task<IList<Photo>> GetAlbumPhotosAsync(int albumId);
+        Task<IEnumerable<Photo>> GetAlbumPhotosAsync(int albumId);
 
-        Task<IList<Comment>> GetPhotoCommentsAsync(int photoId);
+        Task<IEnumerable<Comment>> GetPhotoCommentsAsync(int photoId);
     }
 }

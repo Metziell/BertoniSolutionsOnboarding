@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BertoniSolutionsWebApp.Models;
@@ -11,7 +10,7 @@ namespace BertoniSolutionsWebApp.Services
     {
         private const string JsonPlaceholderUrl = "http://jsonplaceholder.typicode.com";
 
-        public async Task<IList<Album>> GetAlbumsAsync()
+        public async Task<IEnumerable<Album>> GetAlbumsAsync()
         {
             var client = new RestClient(JsonPlaceholderUrl);
 
@@ -20,7 +19,7 @@ namespace BertoniSolutionsWebApp.Services
             return await client.GetAsync<IList<Album>>(request);
         }
 
-        public async Task<IList<Photo>> GetAlbumPhotosAsync(int albumId)
+        public async Task<IEnumerable<Photo>> GetAlbumPhotosAsync(int albumId)
         {
             var client = new RestClient(JsonPlaceholderUrl);
 
@@ -29,7 +28,7 @@ namespace BertoniSolutionsWebApp.Services
             return await client.GetAsync<IList<Photo>>(request);
         }
 
-        public async Task<IList<Comment>> GetPhotoCommentsAsync(int photoId)
+        public async Task<IEnumerable<Comment>> GetPhotoCommentsAsync(int photoId)
         {
             var client = new RestClient(JsonPlaceholderUrl);
 

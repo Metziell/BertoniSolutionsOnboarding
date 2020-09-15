@@ -1,5 +1,3 @@
-using System;
-
 namespace BertoniSolutionsWebApp.Models
 {
     public class ErrorViewModel
