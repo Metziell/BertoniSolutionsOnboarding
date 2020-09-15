@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace BertoniSolutionsWebApp.Models
+namespace RestClientWebApp.Models
 {
     public class Album
     {

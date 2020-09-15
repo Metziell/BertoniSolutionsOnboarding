@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using BertoniSolutionsWebApp.Services;
 using Microsoft.AspNetCore.Mvc;
+using RestClientWebApp.Services;
 
-namespace BertoniSolutionsWebApp.Controllers
+namespace RestClientWebApp.Controllers
 {
     public class AlbumController : Controller
     {
@@ -17,7 +17,7 @@ namespace BertoniSolutionsWebApp.Controllers
         {
             var albums = await this.service.GetAlbumsAsync();
             
-            return View(albums);
+            return this.View(albums);
         }
     }
 }

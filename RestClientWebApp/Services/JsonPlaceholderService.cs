@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BertoniSolutionsWebApp.Models;
+using RestClientWebApp.Models;
 using RestSharp;
 
-namespace BertoniSolutionsWebApp.Services
+namespace RestClientWebApp.Services
 {
     public class JsonPlaceholderService : IJsonPlaceholderService
     {

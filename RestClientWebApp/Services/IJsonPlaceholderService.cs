@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using BertoniSolutionsWebApp.Models;
+using RestClientWebApp.Models;
 
-namespace BertoniSolutionsWebApp.Services
+namespace RestClientWebApp.Services
 {
     public interface IJsonPlaceholderService
     {

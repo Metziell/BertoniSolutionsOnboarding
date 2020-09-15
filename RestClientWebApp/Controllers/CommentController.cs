@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using BertoniSolutionsWebApp.Services;
 using Microsoft.AspNetCore.Mvc;
+using RestClientWebApp.Services;
 
-namespace BertoniSolutionsWebApp.Controllers
+namespace RestClientWebApp.Controllers
 {
     public class CommentController : Controller
     {
